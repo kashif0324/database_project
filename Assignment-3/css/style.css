@@ -1,0 +1,96 @@
+/* style.css */
+/* This CSS provides basic styling consistent with your provided files. */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background: #d63c3c;
+}
+h2, h1 {
+    color: #333;
+   
+}
+a {
+    margin: 5px;
+    padding: 8px 12px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    display: inline-block; /* To apply margin and padding correctly */
+}
+a:hover {
+    background-color: #0056b3;
+}
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    max-width: 450px; /* Consistent with your form input max-width */
+    margin: 20px auto; /* Center the form */
+}
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="date"],
+form input[type="number"],
+form select,
+form textarea {
+    padding: 10px;
+    margin: 5px 0; /* Adjusted margin for better spacing */
+    width: 100%; /* Use 100% width within form */
+    max-width: 400px; /* Max width for inputs, form will adjust */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* Include padding in element's total width */
+}
+form button {
+    padding: 10px 15px;
+    margin-top: 10px; /* Space above button */
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+form button:hover {
+    background-color: darkgreen;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background: white;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Added shadow for consistency */
+    border-radius: 8px; /* Added border-radius for consistency */
+    overflow: hidden; /* Ensures rounded corners apply to table content */
+}
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2; /* Lighter background for headers */
+    font-weight: bold;
+}
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    body {
+        margin: 10px;
+
+        
+    }
+    form, table {
+        margin: 10px auto;
+        padding: 10px;
+    }
+    form input, form button {
+        max-width: 100%; /* Full width on smaller screens */
+    }
+    a {
+        margin: 5px 0; /* Stack links vertically */
+        width: calc(100% - 10px); /* Full width minus margin */
+    }
+}
