@@ -4,6 +4,12 @@ This project contains the MySQL database schema and sample data for **TemuApp**,
 
 ---
 
+## 🎯 Project Objective
+
+The main objective of this project is to design and implement a relational database that supports an e-commerce platform. The database manages user accounts, product catalogs, orders, order items, reviews, and customer phone numbers while ensuring data consistency through primary and foreign keys.
+
+---
+
 ## 📌 Features
 
 - **User Management:** Handles user registration with email, password, and phone numbers.  
@@ -14,7 +20,16 @@ This project contains the MySQL database schema and sample data for **TemuApp**,
 
 ---
 
-## 🛠️ Database Structure
+## 🛠️ Technologies Used
+
+- **Database:** MySQL / MariaDB  
+- **Tool:** phpMyAdmin for database management  
+- **SQL Version:** 5.2.1 (compatible with MySQL 8.x and MariaDB 10.x)  
+- **Server:** XAMPP / LAMP / WAMP for local hosting  
+
+---
+
+## 🗄️ Database Structure
 
 The database consists of the following tables:
 
@@ -41,9 +56,12 @@ The database consists of the following tables:
 
 ---
 
-## 🚀 Installation
+## 🚀 How to Run the Project
 
-1. Open **phpMyAdmin** or MySQL client.  
-2. Create a new database:  
+1. **Set up your local server:**  
+   - Install [XAMPP](https://www.apachefriends.org/) or [WAMP](https://www.wampserver.com/).  
+   - Start Apache and MySQL modules.  
+
+2. **Create a new database:**  
    ```sql
    CREATE DATABASE temuapp_db;
